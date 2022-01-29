@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: roboto;
+    font-family: roboto, sans-serif;
     font-weight: 400;
     color: #000000;
     font-size: 36px;
@@ -16,7 +16,7 @@ body {
     max-width:1852px;
     width:100%;
     margin: 0 auto;
-    padding: 0 50px;
+    padding: 0 20px;
 }
 
 .header {
@@ -31,8 +31,8 @@ body {
     padding-top:15px;
 }
 
-.lang a {
-    font-family: roboto;
+.lang__link {
+    font-family: roboto,sans-serif;
     font-weight: 700;
     padding-right: 42px;
     color: #FFFFFF;
@@ -41,19 +41,19 @@ body {
     text-decoration: none;
 }
 
-.nav-bar, 
-.nav-list {
+.nav-wrap, 
+.nav__list {
     list-style: none;
     display: flex;
     font-size: 20px;
 }
 
-.nav-item {
+.nav__item {
     padding-right: 10px;
 }
 
-.nav-link ,
-.nav-item span {
+.nav__link ,
+.nav__item span {
     color: #000000;
     text-decoration: none;
 }
@@ -63,19 +63,18 @@ body {
 }
 
 .content .title {
-    font-family: pt_sans;
+    font-family: pt_sans,sans-serif;
     font-size: 36px;
-    font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 50px;
 }
 
-.text-link {
+.text-holder__link {
     color:#000000;
 }
 
-.content p {
-    padding-bottom: 40px;
+.text-holder__item {
+    margin-bottom: 40px;
 }
 
 .highlight {
