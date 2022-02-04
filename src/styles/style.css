@@ -57,6 +57,10 @@ body {
     text-decoration: none;
 }
 
+.lang__link:hover {
+    color: #696969;
+}
+
 .nav-wrap, 
 .nav__list {
     list-style: none;
@@ -68,10 +72,18 @@ body {
     padding-right: 10px;
 }
 
-.nav__link ,
+.nav__link:link ,
 .nav__item span {
-    color: #000000;
+    color: #696969;
     text-decoration: none;
+}
+
+.nav__link:hover {
+    color: black;
+}
+
+.nav__link:active {
+    color: black;
 }
 
 .sidebar {
@@ -144,7 +156,8 @@ body {
     z-index: 1;
 }
 
-.content__divider {
+.content__divider,
+.title-holder__divider {
     display: block;
     background-color: #000000;
     width: 80px;
@@ -160,8 +173,61 @@ body {
     position: absolute;
     left: 0;
     right: 0;
-
 }
+
+.users__row.flex-container {
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid #BFBFBF;
+    border-bottom: 2px solid #BFBFBF;
+    padding: 19px 40px 10px;
+}
+
+.users__row.flex-container:last-of-type {
+    border-top: none;
+}
+
+.users__box {
+    position:relative;
+}
+
+.users__card {
+    position: relative;
+    z-index: 2;
+}
+
+.users__card:hover {
+    transform:rotateX(90deg);
+    transition: all ease-out 0.3s;
+    stop-opacity: 1s;
+    cursor: pointer;
+}
+
+.users__card_rotate {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transform: rotateX(5deg);
+}
+
+
+.title-holder {
+    position: relative;
+    margin-bottom: 10px;
+}
+.title-holder__divider {
+    display: inline-block;
+    position: absolute;   
+    top: 18px;
+    left: 40px; 
+}
+
+.title-holder__title {
+    font-size: 36px;
+    padding-left: 140px;
+}
+
 
 
 
